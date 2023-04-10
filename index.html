@@ -2,37 +2,32 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>CSS入門-ヘッダーとフッターの固定表示</title>
-<style>
-body{
-margin: 20px; /* bodyの外側の余白を指定する */
-padding: 50px 10px 50px 10px; /* bodyの内側余白を指定する(上:右:下:左) */
-}
-.Header {
-position: fixed; /* ヘッダーを固定する */
-top: 0; /* 上部から配置の基準位置を決める */
-left: 0; /* 左から配置の基準位置を決める */
-width: 100%; /* ヘッダーの横幅を指定する */
-height: 35px; /* ヘッダーの高さを指定する */
-padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
-background-color: #31a9ee; /* ヘッダーの背景色を指定する */
-color: #000000; /* フォントの色を指定する */
-}
-.Contents {
-width: 100%; /* コンテンツの横幅を指定する */
-overflow: auto; /* コンテンツの表示を自動に設定（スクロール） */
-}
-</style>
+<title>Rieko Uesaka Portfolio</title>
+<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-<div class="Header">ヘッダーを固定する</div>
+<header class="page-header">
+	<div class="row row-center">
+		<div class="span-12 span-l-8 columns">
+			<nav class="nav"> 
+				<ul class="menu-list">
+					<li class="home menu-item">
+						<a class="menu-link" href="home">home</a></li>
+					<li class="about menu-item">
+						<a class="menu-link" href="about">about</a></li>
+					<li class="skills menu-item">
+						<a class="menu-link" href="skills">skills</a></li>
+					<li class="works menu-item">
+						<a class="menu-link" href="works">works</a></li>
+					<li class="contact menu-item">
+						<a class="menu-link" href="contact">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header> 
 <div class="Contents">
-<h1>大見出し</h1>
-<p>段落</p>
-<h2>中見出し</h2>
-<p>段落</p>
-<h3>小見出し</h3>
-<p>段落</p>
+
 </div>
 </body>
 </html>
